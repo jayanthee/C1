@@ -4,7 +4,6 @@
  */
 package com.lrl.c1.dao;
 
-import com.lrl.c1.bean.MediaplanBean;
 import com.lrl.c1.entity.Adunits;
 import com.lrl.c1.entity.Adunitsplacements;
 import com.lrl.c1.entity.Invtargeting;
@@ -38,8 +37,7 @@ public class MediaPlanInventoryDAOImpl implements MediaPlanInventoryDAO {
 
     @Autowired
     private SessionFactory sessionFactory;
-    @Autowired
-    private MediaplanBean mpBean;
+     
 
     // USED###
     public List<Placements> getPlacementsLines(Integer id) {

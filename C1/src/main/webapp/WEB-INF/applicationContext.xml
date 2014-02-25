@@ -53,7 +53,7 @@
 </bean>
 -->
         
-    <!--import resource="beans.xml" / -->
+    <!--import resource="beans.xml" / 
     
     <bean id="mpBean" class="com.lrl.c1.bean.MediaplanBean" />
     <bean id="mpLineBean" class="com.lrl.c1.bean.MediaplanlineBean" />
@@ -67,7 +67,7 @@
 
      <bean id="rd" class="com.lrl.c1.wrapper.RatecardData" /> 
 
-    <bean id="SellSideSyncSettingData" class="com.lrl.c1.wrapper.SellSideSyncSettingData" />
+    <bean id="SellSideSyncSettingData" class="com.lrl.c1.wrapper.SellSideSyncSettingData" />-->
 
     <!-- Scans the classpath for annotated components that will be auto-registered as Spring beans.
         For example @Controller and @Service. Make sure to set the correct base-package-->

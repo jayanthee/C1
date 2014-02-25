@@ -4,7 +4,6 @@
  */
 package com.lrl.c1.dao;
 
-import com.lrl.c1.bean.MediaplanBean;
 import com.lrl.c1.entity.Adunits;
 import com.lrl.c1.entity.Adunitsplacements;
 import com.lrl.c1.entity.Creative;
@@ -40,9 +39,7 @@ import org.springframework.stereotype.Repository;
 public class MediaPlanCreationDAOImpl implements MediaPlanCreationDAO {
 
     @Autowired
-    private SessionFactory sessionFactory;
-    @Autowired
-    private MediaplanBean mpBean;
+    private SessionFactory sessionFactory; 
     private static final Logger LOG = Logger.getLogger(MediaPlanCreationDAOImpl.class.getName());
 
     public Mediaplan createNewMediaPlan(Mediaplan mediaPlan) {

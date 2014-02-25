@@ -70,8 +70,8 @@ public class MediaPlanControllerWS {
     private MediaPlanService mediaplanService;
     @Autowired
     private MediaPlanCreationService mediaplancreationService;
-    @Autowired
-    private MediaplanBean mpBean;
+//    @Autowired
+//    private MediaplanBean mpBean;
     @Autowired
     private CommonService commonService;
     @Autowired
@@ -643,15 +643,15 @@ public class MediaPlanControllerWS {
     }
 
     // end 4th end
-    @GET
-    @Path("/getPubCount/{param}")
-    @Produces({"application/json"})
-    public Map getPubCount(@PathParam("param") Integer mpid) {
-        mpBean.setPubCount(mediaplanService.getPublisherCount(mpid).getPubCount());
-        Map<String, Object> m = new HashMap<String, Object>();
-        m.put("pubCount", mpBean.getPubCount());
-        return m;
-    }
+//    @GET
+//    @Path("/getPubCount/{param}")
+//    @Produces({"application/json"})
+//    public Map getPubCount(@PathParam("param") Integer mpid) {
+//        mpBean.setPubCount(mediaplanService.getPublisherCount(mpid).getPubCount());
+//        Map<String, Object> m = new HashMap<String, Object>();
+//        m.put("pubCount", mpBean.getPubCount());
+//        return m;
+//    }
 
     @GET
     @Path("/requestProposals")
